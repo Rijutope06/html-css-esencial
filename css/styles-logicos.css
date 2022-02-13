@@ -172,9 +172,6 @@ blockquote p{
   display: none;
 }
 
-.main {
-
-}
 
 .wrapper {
   max-inline-size: 902px;
@@ -185,15 +182,16 @@ blockquote p{
   padding-inline: 16px;
 }
 
-.slider {
-}
-
 .slider-container {
   display: block;
   overflow-x: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
   font-size: 0;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
 }
 
 .video{
@@ -215,4 +213,32 @@ blockquote p{
   block-size: 15px;
   background-color: white;
   border-radius: 50%;
+}
+
+form {
+  margin-block-end: 30px;
+}
+
+.form input {
+  inline-size: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--white30);
+  background: #251f24;
+  border-radius: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
+  color: var(--white30);
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+  background: #157EFB;
+  border: none;
+  cursor: pointer;
+}
+
+.form input::placeholder {
+  color: var(--white20);
 }
