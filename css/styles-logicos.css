@@ -184,3 +184,35 @@ blockquote p{
 .main-content {
   padding-inline: 16px;
 }
+
+.slider {
+}
+
+.slider-container {
+  display: block;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video{
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+  text-align: center;
+  margin-block-start: 15px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
